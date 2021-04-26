@@ -1,0 +1,30 @@
+<% layout('layouts/user-account') %>
+<body class="dashboard-body">
+    <%- include('../partials/navbars/user-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> Upload</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Mastering Upload</h1>
+            <p class="dashboard-text">Please upload the file/s you would like to submit to be mastered. Make sure to choose an whether you are looking to master a single, album, or if you are uploading a different number of songs, please select other. If you would like an additions to the </p>
+            <form class="dashboard-form test-master-form" action="/account/mysongs" method="POST" enctype="multipart/form-data">
+                <label for="filename">Filename:</label>
+                <input type="text" id="filename" class="dashboard-input upload-form-input" name="uploadName">
+                <label for="mastering-type">Mastering Type:</label>
+                <select name="masteringType" id="mastering-type" class="dashboard-input upload-form-input">
+                    <option value="">Single</option>
+                    <option value="">Album (10 songs)</option>
+                    <option value="">Other</option>
+                </select>
+                <label for="upload">Upload File:</label>
+                <input type="file" id="upload" class="dashboard-input upload-form-input upload-input" name="audioUpload" multiple>
+                <label for="comments">Additional Comments:</label>
+                <textarea name="" id="comments" cols="30" rows="10" class="dashboard-input upload-form-input"></textarea>
+                <label for="emergency-delivery">Emergency Delivery:</label>
+                <select name="emergencyDelivery" id="emergency-delivery" class="dashboard-input upload-form-input">
+                    <option value="">No</option>
+                    <option value="">Yes (+750kr)</option>
+                </select>
+                <button class="dashboard-btn btn-update">Submit</button>
+            </form>
+        </div>
+    </div>

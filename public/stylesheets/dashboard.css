@@ -1,0 +1,233 @@
+.bold {
+    font-weight: 700;
+}
+
+.dashboard-body {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.dashboard-container {
+    margin-top: 70px;
+    margin-left: 15%;
+    width: 85%;
+}
+
+.dashboard-content {
+    min-height: 80%;
+    margin: 0 3rem 2rem 3rem;
+    background-color: #fff;
+    border: 0.2px solid rgb(196, 195, 195);
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dashboard-logo {
+    color: #555;
+}
+
+.navbar-dashboard {
+    background-color: #f5f5f5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.navbar-dashboard li a {
+    color: #555;
+    background-color: #f5f5f5;
+}
+
+.navbar-dashboard a .user-icon {
+    color: #555;
+}
+
+.dashboard-location {
+    padding: 2rem 3rem;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem;
+}
+
+.dashboard-welcome {
+    margin: 0.5rem 0;
+}
+
+.dashboard-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 2rem 0.75rem;
+}
+
+.dashboard-text {
+    margin: 0 2rem;
+}
+
+.dashboard-list {
+    margin: 0 2rem 1rem;
+}
+
+.user {
+    padding: 0.25rem 0;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.users-link {
+    transition: all 200ms ease-in-out;
+}
+
+.users-link:hover {
+    color: rgba(85, 85, 85, 0.762);
+}
+
+.direction-link {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.dashboard-form {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-btn {
+    border: 1px solid #555;
+    color: #f5f5f5;
+    border-radius: 0.2rem;
+    padding: 5px 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-delete {
+    background-color: #d9534f;
+    border: 1px solid #d9534f;
+}
+
+.btn-delete:hover {
+    background-color: #d9544fd4;
+}
+
+.btn-edit {
+    background-color: #0275d8;
+    border: 1px solid #0275d8;
+}
+
+.btn-edit:hover {
+    background-color: #0274d8cf;
+}
+
+.btn-back {
+    background-color: #5cb85c;
+    border: 1px solid #5cb85c;
+}
+
+.btn-back:hover {
+    background-color: #5cb85cd4;
+}
+
+.btn-update {
+    background-color: #f0ad4e;
+    border: 1px solid #f0ad4e;
+}
+
+.btn-update:hover {
+    background-color: #f0ac4ed7;
+}
+
+.dashboard-btn:hover {
+    cursor: pointer;
+}
+
+.dashboard-input {
+    border: 1px solid #555;
+    border-radius: 0.2rem;
+    padding: 5px 20px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+/* Update User Page */
+
+.update-group {
+    display: flex;
+}
+
+/* Dashboard Sidebar */
+
+.dashboard-sidebar {
+    position: fixed;
+    top: 70px;
+    width: 15%;
+    background-color: #343a40;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.sidebar-list {
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.sidebar-list li {
+    font-weight: 400;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-link, .sidebar-icon {
+    color: #f5f5f5;
+    font-size: 1.1rem;
+    transition: 300ms;
+}
+
+.sidebar-link:hover {
+    color: #f5f5f5d2;
+}
+
+.sidebar-link:hover .sidebar-icon {
+    color: #f5f5f5d2;
+}
+
+/* Test Master Form */
+
+.upload-form-input {
+    margin: 1rem 0;
+}
+
+/* Songs Table */
+
+.songs-table {
+    margin: 0 2rem 2rem 2rem;
+}
+
+.songs-table th {
+    font-weight: 700;
+    text-align: left;
+    padding: 0 1rem 0 0;
+}
+
+.songs-table td {
+    padding: 0.5rem 1rem 0 0;
+}
+
+.songs-btn {
+    margin: 0;
+    padding: 2px 20px;
+}
+
+.songs-table i {
+    color: #f5f5f5;
+}
+
+.songs-table-centered {
+    text-align: center;
+}
+

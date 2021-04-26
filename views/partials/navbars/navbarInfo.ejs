@@ -1,0 +1,38 @@
+<!-- Hamburger Nav -->
+<div class="mobile-nav">
+    <a href="/" class="mobile-nav-logo">SONISKA</a>
+    <button class="ham"></button>
+    <nav class="ham-nav">
+        <ul>
+            <li><a class="menuLink" href="/">Home</a></li>
+            <li><a class="menuLink" href="/pricing">Pricing</a></li>
+            <li><a class="menuLink" href="/Upload">Upload</a></li>
+            <% if(!currentUser) {%> 
+            <li><a class="menuLink" href="/login">Log In</a></li>
+            <li><a class="menuLink" href="/signup">Sign Up</a></li>
+            <% } else { %> 
+            <li><a class="menuLink" href="/logout">Log Out</a></li>
+            <% } %> 
+        </ul>
+    </nav>
+</div>
+
+    <!-- Main Nav  -->
+<nav class="navbar navbar-dark">
+    <a class="logo" href="/">SONISKA</a>
+    <ul>
+    <li><a class="nav-link" href="/">Home</a></li>
+    <li><a class="nav-link" href="/pricing">Pricing</a></li>
+    <li><a class="nav-link" href="/Upload">Upload</a></li>
+    <% if(!currentUser) {%> 
+    <li><a class="nav-link" href="/login">Log In</a></li>
+    <li class="sign-up"><a href="/signup">Sign Up</a></li>
+    <% } else { %> 
+    <% if(currentUser.isGlobalAdmin) {%>
+        <li><a class="menuLink nav-link" href="/admin">Admin</a></li>
+    <% } %> 
+    <li><a class="nav-link" href="/account"><span><i class="far fa-user-circle user-icon"></i></span> <%= currentUser.username %></a></li>
+    <li><a class="nav-link" href="/logout">Log Out</a></li>
+    <% } %> 
+    </ul>
+</nav>

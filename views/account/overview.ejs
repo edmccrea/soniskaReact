@@ -1,0 +1,12 @@
+<% layout('layouts/user-account') %>
+<body class="dashboard-body">
+    <%- include('../partials/navbars/user-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> Overview</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Updates</h1>
+            <ul class="dashboard-list">
+                <li>List of most recent action to go here.</li>
+            </ul>
+        </div>
+    </div>

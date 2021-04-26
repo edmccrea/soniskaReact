@@ -1,0 +1,66 @@
+<% layout('layouts/db') %>
+<body class="dashboard-body">
+    <%- include('../../partials/navbars/admin-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> Completed</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Completed Masters</h1>
+            <ul class="dashboard-list">
+                <li>List of completed masters to go here.</li>
+            </ul>
+            
+            <table class="paid-table songs-table">
+                <h2 class="dashboard-subtitle">Paid Masters</h2>  
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Filename</th>
+                            <th>Upload Date</th>
+                            <th>Status</th>
+                            <th>Mark as </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(let user of users) {%>
+                            <% for(let file of user.audioFiles) {%> 
+                                <% if(file.status === 'Completed') {%> 
+                                <tr>
+                                    <td><a href="/admin/users/<%=user._id %>" class="users-link"><%= user.username %></a></td>
+                                    <td><%= file.uploadName %></td>
+                                    <td>Date</td>
+                                    <td><%= file.status %></td>
+                                    <td class="songs-table-centered"><button class="dashboard-btn btn-back songs-btn"><i class="far fa-check-circle"></i></button></td>
+                                </tr>
+                                <% } %> 
+                            <% } %> 
+                        <% } %> 
+                    </tbody>  
+                </table>
+            
+            <table class="freetest-table songs-table">
+                <h2 class="dashboard-subtitle">Free Test Masters</h2>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Filename</th>
+                        <th>Upload Date</th>
+                        <th>Status</th>
+                        <th>Download File</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(let user of users) {%>
+                        <% if(user.freeTest.status === 'Completed') {%> 
+                            <tr>
+                                <td><a href="/admin/users/<%=user._id %>" class="users-link"><%= user.username %></a></td>
+                                <td><%= user.freeTest.uploadName %></td>
+                                <td>Date</td>
+                                <td><%= user.freeTest.status %> </td>
+                                <td><button>More</button></td>
+                            </tr>
+                        <% } %> 
+                    <% } %> 
+                </tbody>
+            </table>
+        </div>
+    </div>

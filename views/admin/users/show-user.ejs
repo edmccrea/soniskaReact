@@ -1,0 +1,28 @@
+<% layout('layouts/db') %>
+<body class="dashboard-body">
+    <%- include('../../partials/navbars/admin-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> Display <%= user.username %></p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title"><%= user.username %> </h1>
+            <ul class="dashboard-list">
+                <li class="user"><span class="bold">Email:</span> <%= user.email %></li>
+                <li class="user"><span class="bold">Free Test:</span> <%= user.freeTest.status %></li>
+                <li class="user"><span class="bold">Admin Status:</span><% if(user.isGlobalAdmin) {%>
+                        Global Admin
+                    <% } else if(user.isAdmin) {%>
+                        Admin
+                    <% } else { %> 
+                        None
+                    <% } %> 
+                </li>
+            </ul>
+            <div class="user-options">
+                <a href="/admin/users" class="users-link direction-link"><button class="dashboard-btn btn-back">Back</button></a>
+                <a href="/admin/users/<%=user._id%>/edit" class="users-link direction-link"><button class="dashboard-btn btn-edit">Edit</button></a>
+                <form action="/admin/users/<%=user._id%>?_method=DELETE" method="POST"><button class="dashboard-btn btn-delete">Delete</button></form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

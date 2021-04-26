@@ -1,0 +1,15 @@
+<% layout('layouts/db') %>
+<body class="dashboard-body">
+    <%- include('../../partials/navbars/admin-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> User Index</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Soniska User Index</h1>
+            <h2 class="dashboard-subtitle">All Users</h2>
+            <ul class="dashboard-list">
+                <% for (let user of users) { %>
+                    <li class="user"><a class="users-link" href="/admin/users/<%=user._id %>"><%= user.username %>  </a></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>

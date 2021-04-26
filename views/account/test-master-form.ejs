@@ -1,0 +1,17 @@
+<% layout('layouts/user-account') %>
+<body class="dashboard-body">
+    <%- include('../partials/navbars/user-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> Free Test Master</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Free Test Master</h1>
+            <p class="dashboard-text">Please upload the file you would like to use for your free test master below. The file must be in one of these formats... </p>
+            <form class="dashboard-form test-master-form" action="/account" method="POST" enctype="multipart/form-data">
+                <label for="free-file">Upload File:</label>
+                <input type="file" id="free-file" class="dashboard-input upload-input upload-form-input" name="freetest">
+                <label for="comments">Additional Comments:</label>
+                <textarea name="" id="comments" cols="30" rows="10" class="dashboard-input upload-form-input"></textarea>
+                <button class="dashboard-btn btn-update">Submit</button>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,12 @@
+<% layout('layouts/user-account') %>
+<body class="dashboard-body">
+    <%- include('../partials/navbars/user-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> Messages</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Messages</h1>
+            <ul class="dashboard-list">
+                <li>List of all messages to go here. Perhaps even a chat feature?</li>
+            </ul>
+        </div>
+    </div>

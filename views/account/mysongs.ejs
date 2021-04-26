@@ -1,0 +1,85 @@
+<% layout('layouts/user-account') %>
+<body class="dashboard-body">
+    <%- include('../partials/navbars/user-sidebar') %>
+    <div class="dashboard-container">
+        <p class="dashboard-location"><%= currentUser.username %> >> My Songs</p>
+        <div class="dashboard-content">
+            <h1 class="dashboard-title">Updates</h1>
+            <ul class="dashboard-list">
+                <li>List of all songs and status to go here.</li>
+            </ul>
+
+            <% for(let file of currentUser.audioFiles) {%>
+                <% if(file.status === 'Completed') {%> 
+                <table class="completed-table songs-table">
+                    <h2 class="dashboard-subtitle">Completed Masters</h2>
+                    <thead>
+                        <tr>
+                            <th>File</th>
+                            <th>Status</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(let file of currentUser.audioFiles) {%>
+                            <% if(file.status === 'Completed') {%> 
+                            <tr>
+                                <td><%= file.uploadName %> </td>
+                                <td><%= file.status %> </td>
+                                <td class="songs-table-centered"><a href="" class="dashboard-btn btn-edit songs-btn"><i class="far fa-arrow-alt-circle-down"></i></a></td>
+                            </tr>
+                            <% } %> 
+                        <% } %> 
+                    </tbody>
+                </table>
+                <% } %> 
+            <% } %> 
+
+            <% for(let file of currentUser.audioFiles) {%>
+            <% if(file.status === 'Uploaded' || file.status === 'In Progress') {%> 
+            <table class="pending-table songs-table">
+                <h2 class="dashboard-subtitle">Pending Masters</h2>
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Status</th>
+                        <th>Other</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(let file of currentUser.audioFiles) {%> 
+                        <% if(file.status !== 'Completed') {%> 
+                        <tr>
+                            <td><%= file.uploadName %> </td>
+                            <td><%= file.status %> </td>
+                            <td><button>More</button></td>
+                        </tr>
+                        <% } %> 
+                    <% } %> 
+                </tbody>
+            </table>
+            <% break;} %> 
+            <% } %> 
+
+            <% if(currentUser.freeTest.status !== 'None') {%> 
+                <table class="freetest-table songs-table">
+                    <h2 class="dashboard-subtitle">Free Test Master</h2>
+                    <thead>
+                        <tr>
+                            <th>File</th>
+                            <th>Status</th>
+                            <th>Other</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><%= currentUser.freeTest.uploadName %> </td>
+                            <td><%= currentUser.freeTest.status %> </td>
+                            <td><button>More</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <% } %> 
+
+        </div>
+    </div>

@@ -1,0 +1,14 @@
+<% layout('layouts/user') %>
+<body class="user-body login-body">
+    <div class="user-container">
+        <div class="user-main-contents">
+            <h1 class="user-title">Log In</h1>
+            <form action="/login" method="POST" class="user-form">
+                <input class="user-form-input" type="text" placeholder="Username" name="username" required>
+                <input class="user-form-input" type="password" placeholder="Password" name="password" required>
+                <button class="user-btn">LOG IN</button>
+            </form>
+            <p class="user-bottom-text">Don't have an account? <a href="/signup">Sign up here.</a></p>
+        </div>
+    </div>
+</body>
