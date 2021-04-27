@@ -4,6 +4,7 @@ import Navbar from './compnents/layout/Navbar';
 import Home from './compnents/layout/Home';
 import Login from './compnents/auth/Login';
 import Register from './compnents/auth/Register';
+import Footer from './compnents/layout/Footer';
 import './App.css';
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
         <Navbar />
         <Route exact path='/' component={Home} />
         <Switch>
-          <Route exact path='/login' compnent={Login} />
-          <Route exact path='/register' compnent={Register} />
+          <Route exact path='/register' component={Register} />
+          <Route exact path='/login' component={Login} />
         </Switch>
+        <Footer />
       </Fragment>
     </Router>
   );

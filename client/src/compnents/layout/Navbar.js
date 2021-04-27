@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY > 150) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeNav);
   return (
-    <nav className='navbar navbar-dashboard'>
+    <nav className={navbar ? 'navbar nav-active' : 'navbar'}>
       <Link className='logo dashboard-logo' to='/'>
         SONISKA
       </Link>

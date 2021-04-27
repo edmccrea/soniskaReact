@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Register.css';
 
 const Register = () => {
@@ -32,7 +33,8 @@ const Register = () => {
             <div class='t-c'>
               <input type='checkbox' class='t-c-checkbox' />
               <label for='checkbox' class='t-c-label'>
-                I have read and agree to <a href=''>Terms &#38; Conditions</a>
+                I have read and agree to{' '}
+                <Link to='/tac'>Terms &#38; Conditions</Link>
               </label>
             </div>
             <button class='user-btn'>CREATE ACCOUNT</button>

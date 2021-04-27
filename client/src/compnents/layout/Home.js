@@ -1,5 +1,14 @@
 import React from 'react';
 import './Home.css';
+import bbc from '../../imgs/bbc.png';
+import eurovision from '../../imgs/eurovision.png';
+import melodifestivalen from '../../imgs/melodifestivalen.png';
+import MoS from '../../imgs/MoS.png';
+import mtv from '../../imgs/mtv.png';
+import sony from '../../imgs/sony.png';
+import svt from '../../imgs/svt.png';
+import universal from '../../imgs/universal.png';
+import warner from '../../imgs/warner.png';
 
 const Home = () => {
   return (
@@ -29,7 +38,6 @@ const Home = () => {
 
       {/*} Mastering */}
       <section className='mastering-wrapper section-wrapper'>
-        <a className='anchor' id='mastering'></a>
         <div className='info-wrapper'>
           <h2 className='lead'>What is Mastering?</h2>
           <p className='info-text'>
@@ -37,12 +45,16 @@ const Home = () => {
             taking an audio mix and preparing it for distribution. There are
             several considerations in this process: unifying the sound of a
             record, maintaining consistency across an album, and preparing for
-            distribution. When Mastering with Soniska our main focus is to
-            provide our customers with a fresh, experienced and objective
-            listening perspective in order to make your audio material to sound
-            better and to optimise you projects for compatibility with all
-            listening media. We make sure your music is ready for release and we
-            listen to you as we want you to be happy with the final master.
+            distribution.
+            <br />
+            <br /> When Mastering with Soniska our main focus is to provide our
+            customers with a fresh, experienced and objective listening
+            perspective in order to make your audio material to sound better and
+            to optimise you projects for compatibility with all listening media.
+            We make sure your music is ready for release and we listen to you as
+            we want you to be happy with the final master.
+            <br />
+            <br />
             <a href='/pricing' className='more-post'>
               Click here for more information and a full price list.
             </a>
@@ -50,6 +62,7 @@ const Home = () => {
         </div>
         <div className='info-img'>
           <img
+            alt='Man in music studio'
             className='slider-img'
             src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTcgMGgydjNoLTJ2LTN6Ij48L3BhdGg+CjxwYXRoIGZpbGw9IiM0NDQ0NDQiIGQ9Ik02IDR2M2gxdjloMnYtOWgxdi0zeiI+PC9wYXRoPgo8cGF0aCBmaWxsPSIjNDQ0NDQ0IiBkPSJNMiAwaDJ2OGgtMnYtOHoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzQ0NDQ0NCIgZD0iTTEgOXYzaDF2NGgydi00aDF2LTN6Ij48L3BhdGg+CjxwYXRoIGZpbGw9IiM0NDQ0NDQiIGQ9Ik0xMiAwaDJ2MTBoLTJ2LTEweiI+PC9wYXRoPgo8cGF0aCBmaWxsPSIjNDQ0NDQ0IiBkPSJNMTEgMTF2M2gxdjJoMnYtMmgxdi0zeiI+PC9wYXRoPgo8L3N2Zz4K'
           />
@@ -57,8 +70,6 @@ const Home = () => {
       </section>
 
       <section className='mastering-table'>
-        <a className='anchor' id='mastering'></a>
-
         <h2 className='lead'>Mastering Pricing</h2>
         <p className='info-text'>
           We offer a free test mastering so you can try our services. It is for
@@ -112,6 +123,7 @@ const Home = () => {
       <section className='spotify-showcase'>
         <div className='spotify-container'>
           <iframe
+            title='spotifyPlayer'
             src='https://open.spotify.com/embed/playlist/1n852LJwHGX7uLUqn8qOxC'
             width='300'
             height='80'
@@ -129,7 +141,6 @@ const Home = () => {
 
       {/*Post Production */}
       <section className='post-production section-wrapper'>
-        <a className='anchor' id='post-production'></a>
         <div className='info-wrapper'>
           <h2 className='lead'>Post Production</h2>
           <p className='info-text'>
@@ -137,11 +148,15 @@ const Home = () => {
             experience, we can organise a simple cinema projection for you to
             check your project and experience it on the big screen in surround.
             We have enough space to comfortably accommodate and sit a team of 6
-            to 8 people. Our surround system allows for surround work. The
-            studio is located in a large studio complex with access to parking,
-            kitchen, toilet, conference space and we are surrounded by other
-            industry professional and studios which offers the possibility to
-            expand possibilities for your project.
+            to 8 people. <br />
+            <br />
+            Our surround system allows for surround work. The studio is located
+            in a large studio complex with access to parking, kitchen, toilet,
+            conference space and we are surrounded by other industry
+            professional and studios which offers the possibility to expand
+            possibilities for your project.
+            <br />
+            <br />
             <a href='/pricing' className='more-post'>
               Click here to find out more.
             </a>
@@ -149,6 +164,7 @@ const Home = () => {
         </div>
         <div className='info-img'>
           <img
+            alt='sound waves'
             className='wave-img'
             src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMxNCAzMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxNCAzMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGQ9Ik03LDEzOC40MjhjLTMuODY2LDAtNywzLjEzNC03LDd2MjMuMTQ1YzAsMy44NjYsMy4xMzQsNyw3LDdzNy0zLjEzNCw3LTd2LTIzLjE0NUMxNCwxNDEuNTYxLDEwLjg2NiwxMzguNDI4LDcsMTM4LjQyOHoiLz4NCgk8cGF0aCBkPSJNMzQuMjczLDEzOC40MjhjLTMuODY2LDAtNywzLjEzNC03LDd2MjMuMTQ1YzAsMy44NjYsMy4xMzQsNyw3LDdzNy0zLjEzNCw3LTd2LTIzLjE0NQ0KCQlDNDEuMjczLDE0MS41NjEsMzguMTQsMTM4LjQyOCwzNC4yNzMsMTM4LjQyOHoiLz4NCgk8cGF0aCBkPSJNNjEuNTQ2LDEyOC42MzVjLTMuODY2LDAtNywzLjEzNC03LDd2NDIuNzNjMCwzLjg2NiwzLjEzNCw3LDcsN3M3LTMuMTM0LDctN3YtNDIuNzMNCgkJQzY4LjU0NiwxMzEuNzY5LDY1LjQxMiwxMjguNjM1LDYxLjU0NiwxMjguNjM1eiIvPg0KCTxwYXRoIGQ9Ik04OC44MTgsMTE3LjA2M2MtMy44NjYsMC03LDMuMTM0LTcsN3Y2NS44NzVjMCwzLjg2NiwzLjEzNCw3LDcsN2MzLjg2NiwwLDctMy4xMzQsNy03di02NS44NzUNCgkJQzk1LjgxOCwxMjAuMTk2LDkyLjY4NSwxMTcuMDYzLDg4LjgxOCwxMTcuMDYzeiIvPg0KCTxwYXRoIGQ9Ik0xMTYuMDkyLDk2LjU4OGMtMy44NjYsMC03LDMuMTM0LTcsN3YxMDYuODI0YzAsMy44NjYsMy4xMzQsNyw3LDdjMy44NjYsMCw3LTMuMTM0LDctN1YxMDMuNTg4DQoJCUMxMjMuMDkyLDk5LjcyMiwxMTkuOTU4LDk2LjU4OCwxMTYuMDkyLDk2LjU4OHoiLz4NCgk8cGF0aCBkPSJNMTQzLjM2NCw0OC4wNzFjLTMuODY2LDAtNywzLjEzNC03LDd2MjAzLjg1N2MwLDMuODY2LDMuMTM0LDcsNyw3YzMuODY2LDAsNy0zLjEzNCw3LTdWNTUuMDcxDQoJCUMxNTAuMzY0LDUxLjIwNSwxNDcuMjMsNDguMDcxLDE0My4zNjQsNDguMDcxeiIvPg0KCTxwYXRoIGQ9Ik0xNzAuNjM3LDY1LjQzYy0zLjg2NiwwLTcsMy4xMzQtNyw3VjI0MS41N2MwLDMuODY2LDMuMTM0LDcsNyw3YzMuODY2LDAsNy0zLjEzNCw3LTdWNzIuNDMNCgkJQzE3Ny42MzcsNjguNTYzLDE3NC41MDMsNjUuNDMsMTcwLjYzNyw2NS40M3oiLz4NCgk8cGF0aCBkPSJNMTk3LjkwOSwxMDAuMTQ4Yy0zLjg2NiwwLTcsMy4xMzQtNyw3djk5LjcwM2MwLDMuODY2LDMuMTM0LDcsNyw3YzMuODY2LDAsNy0zLjEzNCw3LTd2LTk5LjcwMw0KCQlDMjA0LjkwOSwxMDMuMjgyLDIwMS43NzUsMTAwLjE0OCwxOTcuOTA5LDEwMC4xNDh6Ii8+DQoJPHBhdGggZD0iTTIyNS4xODMsMTIxLjA2N2MtMy44NjYsMC03LDMuMTM0LTcsN3Y1Ny44NjRjMCwzLjg2NiwzLjEzNCw3LDcsN3M3LTMuMTM0LDctN3YtNTcuODY0DQoJCUMyMzIuMTgzLDEyNC4yMDEsMjI5LjA0OSwxMjEuMDY3LDIyNS4xODMsMTIxLjA2N3oiLz4NCgk8cGF0aCBkPSJNMjUyLjQ1NiwxMjkuOTcxYy0zLjg2NiwwLTcsMy4xMzQtNyw3djQwLjA1OWMwLDMuODY2LDMuMTM0LDcsNyw3YzMuODY2LDAsNy0zLjEzNCw3LTd2LTQwLjA1OQ0KCQlDMjU5LjQ1NiwxMzMuMTA1LDI1Ni4zMjIsMTI5Ljk3MSwyNTIuNDU2LDEyOS45NzF6Ii8+DQoJPHBhdGggZD0iTTI3OS43MjgsMTM4LjQyOGMtMy44NjYsMC03LDMuMTM0LTcsN3YyMy4xNDVjMCwzLjg2NiwzLjEzNCw3LDcsN2MzLjg2NiwwLDctMy4xMzQsNy03di0yMy4xNDUNCgkJQzI4Ni43MjgsMTQxLjU2MSwyODMuNTk0LDEzOC40MjgsMjc5LjcyOCwxMzguNDI4eiIvPg0KCTxwYXRoIGQ9Ik0zMDcsMTM4LjQyOGMtMy44NjYsMC03LDMuMTM0LTcsN3YyMy4xNDVjMCwzLjg2NiwzLjEzNCw3LDcsN3M3LTMuMTM0LDctN3YtMjMuMTQ1DQoJCUMzMTQsMTQxLjU2MSwzMTAuODY2LDEzOC40MjgsMzA3LDEzOC40Mjh6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=='
           />
@@ -158,7 +174,6 @@ const Home = () => {
       {/* About */}
 
       <section className='about'>
-        <a className='about-anchor' id='about'></a>
         <div className='about-img'>
           <img
             src='https://images.unsplash.com/photo-1548502632-6b93092aad0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
@@ -281,6 +296,7 @@ const Home = () => {
                 allowfullscreen=''
                 loading='lazy'
                 className='map'
+                title='googleMap'
               ></iframe>
             </div>
           </div>
@@ -289,31 +305,31 @@ const Home = () => {
 
       <section className='clients'>
         <div className='gallery-item'>
-          <img src='./imgs/mtv.png' alt='' />
+          <img src={mtv} alt='MTV logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/universal.png' alt='' />
+          <img src={universal} alt='Universal logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/bbc.png' alt='' />
+          <img src={bbc} alt='BBC logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/MoS.png' alt='' />
+          <img src={MoS} alt='Ministry of Sound logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/svt.png' alt='' />
+          <img src={svt} alt='SVT logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/warner.png' alt='' />
+          <img src={warner} alt='Warner logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/sony.png' alt='' />
+          <img src={sony} alt='Sony logo' />
         </div>
         <div className='gallery-item'>
-          <img src='./imgs/eurovision.png' alt='' />
+          <img src={eurovision} alt='Eurovision logo' />
         </div>
         <div className='gallery-item'>
-          <img src='../../imgs/melodifestivalen.png' alt='' />
+          <img src={melodifestivalen} alt='Melodifestivalen logo' />
         </div>
       </section>
     </div>
