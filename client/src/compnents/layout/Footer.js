@@ -37,10 +37,12 @@ const Footer = () => {
       </div>
       <div class='footer-logo'>
         <img class='footer-img' src={logo} alt='soniska-logo' />
-        <p class='footer-name'>SONISKA</p>
-        <p class='footer-copyright'>
-          &#169;Copyright 2021 Soniska AB. All rights reserved.
-        </p>
+        <div className='footer-text'>
+          <p class='footer-name'>SONISKA</p>
+          <p class='footer-copyright'>
+            &#169;Copyright 2021 Soniska AB. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

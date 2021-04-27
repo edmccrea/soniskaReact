@@ -42,7 +42,17 @@
 
 .footer-logo {
   text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 10px 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 1rem;
 }
 
 .footer-img {
