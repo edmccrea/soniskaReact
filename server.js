@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/upload', require('./routes/api/upload'));
 // app.use('/admin', require('./routes/api/admin'));
 // app.use('/account', require('./routes/api/account'));
 
