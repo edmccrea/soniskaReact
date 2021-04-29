@@ -9,21 +9,26 @@ import FAQ from './compnents/layout/FAQ';
 import Footer from './compnents/layout/Footer';
 import './App.css';
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 function App() {
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <Route exact path='/' component={Home} />
-        <Switch>
-          <Route exact path='/register' component={Register} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/pricing' component={Pricing} />
-          <Route exact path='/faq' component={FAQ} />
-        </Switch>
-        <Footer />
-      </Fragment>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <Route exact path='/' component={Home} />
+          <Switch>
+            <Route exact path='/register' component={Register} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/pricing' component={Pricing} />
+            <Route exact path='/faq' component={FAQ} />
+          </Switch>
+          <Footer />
+        </Fragment>
+      </Router>
+    </Provider>
   );
 }
 
